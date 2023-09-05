@@ -1,0 +1,112 @@
+body {
+  color: #000;
+  font-family: 'Noto Sans JP', "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  background-color: #ffffff;
+}
+
+p {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 34px;
+  margin: 0;
+}
+h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+
+/* PC用スタイル */
+@media screen and (min-width: 768px) {
+  body {
+
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+  h1 {
+    /* color: #000; */
+    font-size: 34px;
+    border: 1px solid #000;
+    margin: 0;
+    /* padding: 20px 30px; */
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav a {
+    font-size: 34px;
+    font-weight: bold;
+    padding: 10px 30px;
+    display: inline-block;
+  }
+
+  nav a:visited {
+    color: #000;
+  }
+
+  nav a:hover {
+    color: #000;
+  }
+
+  nav a:active {
+    color: #000;
+  }
+
+  nav a:link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  #main-visual {
+    width: 100%;
+    height: auto;
+  }
+
+  #main-visual > img {
+    width: 100%;
+  }
+
+  #about {
+    /* margin: 0 auto; */
+    padding: 20px 0;
+  }
+
+  #profile-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  #profile-box > img {
+    border-radius: 140px;
+    width: 140px;
+    height: 140px;
+  }  
+
+  #profile-parag {
+    margin-left: 20px;
+  }
+.section-h2 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  
+}
+
+/* スマートフォン用スタイル */
+@media screen and (max-width:767px) {
+  body {
+    /* margin: 0 auto; */
+  }
+}
