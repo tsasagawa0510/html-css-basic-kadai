@@ -31,7 +31,7 @@ img {
 }
 
 div {
-  font-size: 0;
+  /* font-size: 0; */
 }
 
 .wraper {
@@ -129,8 +129,6 @@ nav ul li {
 #works > div {
   display: flex;
   justify-content :space-between;
-  /* flex-wrap: wrap; */
-  flex-direction: row;
 }
 
 .works-con {
