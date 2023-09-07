@@ -1,0 +1,48 @@
+body {
+  margin: 0 auto;
+  
+}
+
+body {
+  max-width: 1200px;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+body > div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  flex-wrap: wrap;
+}
+
+.con {
+  position: relative;
+  margin: 3%;
+}
+
+.con > img {
+  width: 100%;
+}
+
+.con > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.con > div > span {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 5px 25px;
+  border:  1px solid #000;
+  
+}
+
+.con > div > h2 {
+  margin: 15px;
+}
