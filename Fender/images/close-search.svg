@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/44px/close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header/Desktop/1920/search/defult" transform="translate(-77.000000, -27.000000)" fill="#D52B1E">
+            <g id="div---Toolbar" transform="translate(64.000000, 12.000000)">
+                <g id="div---pinned-left">
+                    <g id="div---Hamburger" transform="translate(0.000000, 2.000000)">
+                        <g id="icons/44px/x">
+                            <path d="M22.75,21.25 L33,21.25 L33,22.75 L22.75,22.75 L22.75,33 L21.25,33 L21.25,22.75 L11,22.75 L11,21.25 L21.25,21.25 L21.25,11 L22.75,11 L22.75,21.25 Z" id="Combined-Shape" transform="translate(22.000000, 22.000000) rotate(45.000000) translate(-22.000000, -22.000000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
