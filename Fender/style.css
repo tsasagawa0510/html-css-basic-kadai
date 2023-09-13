@@ -304,7 +304,7 @@ body > #header-mailinfo {
 }
 
 .category-items > a > div {
-  font-size: 0;
+  /* font-size: 0; */
   overflow: hidden;
   margin-bottom: 20PX;
 }
@@ -325,6 +325,8 @@ body > #header-mailinfo {
 .category-items > a > div > img {
   width: 100%;
   transition: all 0.5s ease-in-out;
+  /* vertical-align: bottom; */
+  display: block;
 }
 
 
