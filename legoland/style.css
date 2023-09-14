@@ -215,7 +215,7 @@ img {
 
 @media screen and (min-width:480px) and (max-width:959px){ 
   body {
-    display: none;
+    /* display: none; */
   }
 }
 

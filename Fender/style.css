@@ -79,6 +79,10 @@ nav > ul > li > a:hover {
 header {
   padding: 0 10px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1000;
 }
 
 .logo-link {
@@ -126,6 +130,11 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
+}
+
+.child {
+  
 }
 
 input[type="search"] {
@@ -144,6 +153,7 @@ input[type="search"]:focus {
   max-width: 1300px;
   margin: 0 auto;
   text-align: center;
+  
 }
 
 
@@ -191,6 +201,8 @@ input[type="search"]:focus {
   border-color: transparent transparent transparent #da352a;
   transition: 0.2s;
 }
+
+
 
 /* .relativ-header-wrap{
   width: 100%;
