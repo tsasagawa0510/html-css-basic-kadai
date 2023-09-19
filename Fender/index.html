@@ -24,15 +24,19 @@
   <header>
     <div id="header-warp">
       <a href="" class="logo-link"><img src="images/Fender_guitars_logo.svg" id="logo"></a>
+      
       <form class="serach" method="post" action="URL" method="get">
           <input type="search" name="s" placeholder="Search">
       </form>
       <div class="header-center-wrap">
+        <a href="" class="header-center-link" class="locator-link" ><img class="header-center-link-img" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cg clip-path='url(%23a)' stroke='%23000' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 16.6c0-2.9-2.3-5.4-5.6-6.3M6.2 10.4c-3 .9-5.2 3.4-5.2 6.2'/%3E%3Cpath d='M9.1 11a5 5 0 1 0 0-10 5 5 0 0 0 0 10z' fill='%23fff'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h18v17.6H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E" alt=""></a>
         <a href="" class="header-center-link" class="locator-link" ><img class="header-center-link-img" src="images/locator.svg" alt=""></a>
         <a href="" class="header-center-link" class="locator-link" ><img class="header-center-link-img" src="images/minicart.svg" alt=""></a>
+        <a href="" class="header-center-link" class="locator-link" ><img class="header-center-link-img" src="images/hamburger-menu.svg" alt="ナビゲーションを開く" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'block'"></a>
       </div>
       
     </div>
+    <!-- 1280px以上で表示するnav -->
     <div id="category-nav">
       <ul>
         <li>
@@ -356,6 +360,42 @@
           </div>
         </li>
       </ul>
+    </div>
+
+    <!-- 1279px以下でハンバーガーメニューを表示 -->
+    <div class="hamburger-menu-wrap">
+      <nav class="hamburger-menu">
+          <div class="category-menu">
+            
+            <a id="hamburger-menu-logo" href="index.html" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'" ><img src="images/Fender_guitars_logo.svg" alt="トップページに戻る"></a>
+            <!-- <img id="close-icon" src="images/close-menu-mob.svg" alt="メニューを閉じる" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'" > -->
+            <img id="close-icon" src="images/close-menu-mob.svg" alt="ナビゲーションを閉じる" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">
+            <a class="" href="index.html" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">限定</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">ギター</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">アコスタソニック</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">アコースティック</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">ベース</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">アンプ</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">ペダル</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">アクセサリー</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">ライフスタイル</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">スクワイヤー</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">ニュース</a>
+          </div>
+          <div class="mypage-menu">
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">ログイン</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">Find A DEALER</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">SHOPPING BAG</a>
+          </div>
+          <div class="more-menu">
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">MORE FROM FENDER</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">Fender.com</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">Play</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">Tune</a>
+            <a class="" href="" onclick="document.getElementById('hamburger-menu-wrap').style.display = 'none'">ビギナー</a>
+          </div>
+      </nav>
+
     </div>
   </header>
   
