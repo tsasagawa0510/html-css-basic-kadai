@@ -14,20 +14,6 @@ li {
   list-style: none;
 }
 
-
-a:visited {
-
-}
-
-a:hover {
-  
-}
-
-
-a:active {
-
-}
-
 img {
   width: 100%;
 }
@@ -77,7 +63,8 @@ nav > ul > li > a:hover {
 }
 
 header {
-  padding: 0 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   position: sticky;
   top: 0;
@@ -91,6 +78,7 @@ header a {
 
 .logo-link {
   display: inline-block;
+  width: 25%;
 }
 
 .logo-link > img {
@@ -100,35 +88,37 @@ header a {
 
 .serach {
   font-family: 'Archivo Black';
+  width: 50%;
 }
 
 .header-center-wrap {
   display: flex;
+  width: 20%;
+  justify-content: center;
 }
 
 .header-center-link {
-  width: 64px;
-  height: 64px;
-  display: flex;
+  width: 20%;
+  /* text-align: center; */
+  display: block;
   box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
   border-bottom: solid 4px transparent;
 }
 
 /* 初期時ハンバーガーメニューは非表示 */
-.header-center-link:last-child {
+.header-center-link-login {
   display: none;
 }
 
-.header-center-link:first-child {
+.header-center-link.btn-humburger {
   display: none;
 }
 
 .header-center-link-img {
-  width: 22px;
-  height: 22px;
   display: block;
+  width: 15px;
+  height: 15px;
 }
 
 .header-center-link:hover {
@@ -137,19 +127,17 @@ header a {
 }
 
 #header-warp {
-  max-width: 1500px;
-  margin: 0 auto;
+  /* max-width: 1500px; */
+  /* margin: 0 auto; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-}
-
-.serach-wrap {
-  
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 input[type="search"] {
-  width: 500px;
+  width: 100%;
   padding: 5px 20px 5px 40px;
   border: solid 0.5px #c2c2c2;
   border-radius: 25px;
@@ -250,9 +238,7 @@ input[type="search"]:focus {
   box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.2);
 }
 
-.child-nav-side-wrap {
-  
-}
+
 
 .child-nav-header {
   color: #000000;
@@ -351,19 +337,20 @@ body > #header-mailinfo {
   color: #ffffff;
 }
 
-.content-wrap {
-  /* margin: 0 auto 0 auto; */
-}
 .category-wrap {
-  margin-top: 40px;
+  margin-top: 5px;
+  /* margin-left: 5px;
+  margin-right: 5px; */
 }
 
 #category {
   text-align: left;
+  margin-top: 80px;
 }
 
 #category > h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  margin-left: 5px;
 }
 
 #category-list {
@@ -381,9 +368,7 @@ body > #header-mailinfo {
   display: block;
 }
 
-.category-items > a:hover {
-  
-}
+
 
 .category-items > a > div {
   /* font-size: 0; */
@@ -522,7 +507,112 @@ footer  a {
 
 .hamburger-menu-wrap {
   display: none;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #ffffff;
+  text-align: left;
+  width: 500px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px 50px 0 50px;
 }
+
+.hamburger-menu-wrap a {
+  display: block;
+}
+
+.category-menu  a, .mypage-menu a {
+  color: #000000;
+  font-weight: bold;
+}
+
+
+
+.category-menu {
+  border-bottom: solid 1px #c2c2c2;
+  padding-bottom: 30px;
+}
+
+.category-menu > a {
+  font-size: 1.5rem;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-menu > a:not(:first-child)::after {
+  display: inline-block;
+  content: url(images/back-menu-mob.svg);
+  transform: rotate(180deg);
+}
+
+.hamburger-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-close {
+    padding: 5px;
+}
+
+#close-icon {
+  width: 20px;
+}
+
+#hamburger-menu-logo {
+  display: inline-block;
+}
+
+#hamburger-menu-logo > img  {
+  display: inline-block;
+  width: 100px;
+}
+
+.mypage-menu {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #c2c2c2;
+}
+.mypage-menu > a {
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
+.mypage-menu > a::before {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 20px;
+  align-items: center;
+  content: "";
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cg clip-path='url(%23a)' stroke='%23000' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 16.6c0-2.9-2.3-5.4-5.6-6.3M6.2 10.4c-3 .9-5.2 3.4-5.2 6.2'/%3E%3Cpath d='M9.1 11a5 5 0 1 0 0-10 5 5 0 0 0 0 10z' fill='%23fff'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h18v17.6H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.more-menu {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.more-menu > a:first-child {
+  font-weight: bold;
+  color: #000000;
+}
+
+.more-menu > a {
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
 
 /* ~1280pxでcategory-navを非表示にしてハンバーガーメニューを表示*/
 @media screen and (max-width:1280px) { 
@@ -531,108 +621,9 @@ footer  a {
   }
 
     /* ハンバーガーメニューのアイコンを表示 */
-  .header-center-link:last-child {
-    display: flex;
-  }
-
-  .hamburger-menu-wrap {
-    background-color: #ffffff;
-    text-align: left;
-    width: 500px;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0 50px;
-    /* display: block; */
-  }
-
-  .hamburger-menu-wrap a {
+  .header-center-link.btn-humburger {
     display: block;
   }
-
-  .category-menu  a, .mypage-menu a {
-    color: #000000;
-    font-weight: bold;
-  }
-
-  .hamburger-menu {
-    
-  }
-
-  .category-menu {
-    border-bottom: solid 1px #c2c2c2;
-    padding-bottom: 30px;
-  }
-
-  .category-menu > a {
-    font-size: 1.5rem;
-    padding: 15px 5px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .category-menu > a:not(:first-child)::after {
-    display: inline-block;
-    content: url(images/back-menu-mob.svg);
-    transform: rotate(180deg);
-  }
-
-  #close-icon {
-    width: 20px;
-    float: right;
-    margin-top: 30px;
-  }
-
-  #hamburger-menu-logo {
-    display: inline-block;
-    
-  }
-
-  #hamburger-menu-logo > img  {
-    display: inline-block;
-    width: 100px;
-  }
-
-  .mypage-menu {
-    margin-top: 30px;
-    padding-bottom: 30px;
-    border-bottom: solid 1px #c2c2c2;
-  }
-  .mypage-menu > a {
-    padding: 10px 0;
-    font-size: 1.5rem;
-  }
-  .mypage-menu > a::before {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin-right: 20px;
-    align-items: center;
-    content: "";
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cg clip-path='url(%23a)' stroke='%23000' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 16.6c0-2.9-2.3-5.4-5.6-6.3M6.2 10.4c-3 .9-5.2 3.4-5.2 6.2'/%3E%3Cpath d='M9.1 11a5 5 0 1 0 0-10 5 5 0 0 0 0 10z' fill='%23fff'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h18v17.6H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .more-menu {
-    margin-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .more-menu > a:first-child {
-    font-weight: bold;
-    color: #000000;
-  }
-
-  .more-menu > a {
-    padding: 10px 0;
-    font-size: 1.2rem;
-  }
-
- 
-
-  
 }
 
 @media screen and (max-width:1025px) {
@@ -657,21 +648,48 @@ footer  a {
 }
 
 @media screen and (max-width:768px) {
-  .header-center-link:first-child {
-    display: flex;
+
+  .header-center-link {
+    padding: 0;
+    margin:  0;
+    border-bottom: solid 1px transparent;
+  }
+
+  .header-center-link:hover {
+    border-bottom: solid 1px #da352a;
+    transition: 0.1s;
+  }
+
+  .header-center-link > img {
+    width: 10px;
+  }
+  
+  .header-center-link-login {
+    display: block;
+  }
+
+
+  #header-warp {
+    /* justify-content: space-between; */
   }
    
   .serach {
-    display: none;
+    /* display: none; */
+    flex: 0 100%;
+    order: 1;
+    margin: 05px;
+  }
+
+  .serach > input {
+    width: 100%;
   }
   
-  body > nav {
+  header > nav {
     display: none;
   }
   
   #main-visial {
     height: auto;
-    
   }
   
   #main-visial > img {
@@ -691,11 +709,17 @@ footer  a {
     transform: translate(-50%,-50%);
     margin: 0;
   }
+
+  
   
   #category-list {
     justify-content: space-around;
     flex-wrap: wrap;
   
+  }
+
+  .category-wrap {
+    margin: 0;
   }
   
   .category-items {
@@ -729,6 +753,15 @@ footer  a {
 
   .copyright-wrap {
     text-align: center;
+  }
+
+  /* ハンバーガーメニューを横幅一杯に表示 */
+  .hamburger-menu-wrap {
+    width: 100%;
+  }
+
+  #category > h2 {
+    font-size: 2.0rem;
   }
   
 }
